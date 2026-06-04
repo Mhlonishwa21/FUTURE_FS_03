@@ -30,7 +30,6 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, { threshold: 0.15 });
-
 revealItems.forEach((el, i) => {
   el.dataset.delay = i * 80;
   observer.observe(el);
